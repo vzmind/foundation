@@ -32,6 +32,9 @@ gem 'cancancan'
 gem 'simple_form'
 gem 'foundation-rails'
 
+gem 'debugger',        group: :development
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

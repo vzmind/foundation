@@ -28,5 +28,16 @@ class Ability
     #
     # See the wiki for details:
     # https://github.com/CanCanCommunity/cancancan/wiki/Defining-Abilities
+
+    # Roles are inherited 
+    if user.role? :enduser
+      can :manage, Location
+      can :manage, User
+    end
+    if user.role? :admin
+    end
+    if user.role? :superadmin
+      can :manage, Organization
+    end
   end
 end

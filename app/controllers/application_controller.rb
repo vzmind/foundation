@@ -3,7 +3,13 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
+  # Devise after sign in redirection
   def after_sign_in_path_for(resource)
   	root_path
 	end
+
+  # Cancan unauthorized redirection
+  rescue_from CanCan::AccessDenied do |exception|
+    redirect_to root_url, :alert => exception.message
+  end
 end

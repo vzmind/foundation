@@ -1,0 +1,7 @@
+Welcome
+- if can? :manage, Organization
+  %li
+    = link_to('Organizations', organizations_path)
+- if can? :manage, Location
+  %li
+    = link_to('Locations', locations_path)
