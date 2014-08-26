@@ -1,0 +1,13 @@
+%p#notice= notice
+%span
+  Name
+%span
+  = @location.name
+%span
+  Address
+%span
+  = @location.address
+
+= link_to 'Edit', edit_location_path(@location)
+\|
+= link_to 'Back', locations_path

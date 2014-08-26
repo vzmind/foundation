@@ -25,6 +25,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'haml'
+gem 'haml-rails'
 gem 'mongoid'
 gem 'devise'
 gem 'cancancan'

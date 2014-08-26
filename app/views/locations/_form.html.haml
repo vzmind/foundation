@@ -1,0 +1,12 @@
+= simple_form_for @location do |f|
+  - if @location.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@location.errors.count, "error")} prohibited this location from being saved:"
+      %ul
+        - @location.errors.full_messages.each do |msg|
+          %li= msg
+  = f.input :name
+  = f.input :address
+  = f.association :organization, collection: Organization.all, prompt: "Choose a Company"
+  .actions
+    = f.submit 'Save'
