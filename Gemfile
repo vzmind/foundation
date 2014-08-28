@@ -32,7 +32,14 @@ gem 'cancancan'
 gem 'simple_form'
 gem 'foundation-rails'
 
-gem 'debugger',        group: :development
+#gem 'debugger',        group: :development
+
+group :development, :test do
+  gem 'spring-commands-rspec'
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'rb-fsevent' if `uname` =~ /Darwin/
+end
 
 
 # Use ActiveModel has_secure_password
