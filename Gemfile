@@ -31,6 +31,7 @@ gem 'devise'
 gem 'cancancan'
 gem 'simple_form'
 gem 'foundation-rails'
+gem 'newrelic_rpm'
 
 #gem 'debugger',        group: :development
 
