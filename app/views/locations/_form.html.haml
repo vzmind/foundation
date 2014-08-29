@@ -7,6 +7,9 @@
           %li= msg
   = f.input :name
   = f.input :address
+  = f.input :city
+  = f.input :zipcode
+  = f.input :landline
   = f.association :organization, collection: Organization.all, prompt: "Choose a Company"
   .actions
     = f.submit 'Save'

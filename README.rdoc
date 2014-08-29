@@ -1,6 +1,7 @@
 == README
 Current App state:
 [ ![Codeship Status for vzmind/edesio-foundation](https://www.codeship.io/projects/e168a420-11b8-0132-fc3e-7afc2e92f456/status) ](https://www.codeship.io/projects/33096)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
