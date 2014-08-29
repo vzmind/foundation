@@ -5,8 +5,8 @@ class ApplicationController < ActionController::Base
 
   # Devise after sign in redirection
   def after_sign_in_path_for(resource)
-  	root_path
-	end
+    root_path
+  end
 
   # Cancan unauthorized redirection
   rescue_from CanCan::AccessDenied do |exception|

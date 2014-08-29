@@ -37,13 +37,15 @@ gem 'foundation-rails'
 group :development, :test do
   gem 'spring-commands-rspec'
   gem 'rspec-rails'
+  gem 'faker' 
+  gem 'capybara' 
+  gem 'launchy'
   gem 'guard-rspec'
   gem 'rb-fsevent' if `uname` =~ /Darwin/
+  gem 'factory_girl_rails'
 end
 
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
 # gem 'unicorn'

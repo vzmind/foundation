@@ -4,4 +4,6 @@ class Location
   
   field :name
   field :address
+  field :city
+  validates :city, presence: true
 end
