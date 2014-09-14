@@ -9,5 +9,6 @@ FactoryGirl.define do
     f.city {Faker::Address.city}
     f.zipcode {Faker::Address.zip_code}
     f.landline {Faker::PhoneNumber.phone_number}
+    f.organization_id {build(:organization).id}
   end
 end

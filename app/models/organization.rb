@@ -1,9 +1,11 @@
 class Organization
   include Mongoid::Document
-  embeds_many :locations
+  has_many :locations
 
   field :name
   field :address
-  field :description
+  field :city
+  field :zipcode
+  field :landline
 
 end
